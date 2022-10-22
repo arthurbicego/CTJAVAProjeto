@@ -6,8 +6,7 @@ public class MetodosConversao {
     public static double celsiusParaFahrehnheit(double celsius) {
         final double FATOR_1 = (double) 9 / 5;
         final double FATOR_2 = 32;
-        double test = ((celsius * FATOR_1) + FATOR_2);
-        return test;
+        return ((celsius * FATOR_1) + FATOR_2);
     }
 
     public static double celsiusParaKelvin(double celsius) {
@@ -42,32 +41,9 @@ public class MetodosConversao {
     public static double kelvinParaFahrenheit(double kelvin) {
         final double FATOR_1 = (double) 9 / 5;
         final double FATOR_2 = 32;
-        return (FATOR_1 * (kelvin - 273.15) + 32);
+        return (FATOR_1 * (kelvin - 273.15) + FATOR_2);
     }
     public static double kelvinParaKelvin(double kelvin) {
         return (kelvin);
     }
 }
-
-
-
-
-
-
-
-
-//    // Estudo:
-//    public static void printarTemperaturasConvertidas (String[] temperaturasArray) {
-//        for (int i = 0; i < temperaturasArray.length; i++) {
-//            double temperaturaCalculada;
-//            try {
-//                temperaturaCalculada = Double.parseDouble(temperaturasArray[i]);
-//            } catch (Exception exception) {
-//                System.err.println("Impossível converter " + temperaturasArray[i] + ", portanto foi utilizado 100.");
-//                temperaturaCalculada = 100;
-//            }
-//            double celsius = MetodosConversao.celsiusParaFahrehnheit(temperaturaCalculada);
-//            System.out.println(celsius);
-//        }
-//    }
-//

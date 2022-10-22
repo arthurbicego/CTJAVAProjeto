@@ -114,6 +114,5 @@ public class ConversorTemperatura {
                 System.out.println("Programa finalizado. Obrigado!");
             }
         }
-
     }
 }
